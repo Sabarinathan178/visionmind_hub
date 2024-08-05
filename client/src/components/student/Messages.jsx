@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 import Loader from './../utils/Loader'
 import Empty from './../utils/Empty'
 
-const socket = io('http://localhost:4000');
+const socket = io('https://visionmind-hub.onrender.com');
 
 function Messages() {
 

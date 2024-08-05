@@ -67,7 +67,7 @@ function TeacherProfile() {
     }
 
     const sendPayment = async () => {
-        const url = `http://localhost:4000/student/payment/?fee=${teacher.availability.fee}&teacher=${teacher.username}&student=${JSON.parse(localStorage.getItem('student')).username}&multipleSubjects=${JSON.stringify(payment.multipleSubject)}`;
+        const url = `https://visionmind-hub.onrender.com/student/payment/?fee=${teacher.availability.fee}&teacher=${teacher.username}&student=${JSON.parse(localStorage.getItem('student')).username}&multipleSubjects=${JSON.stringify(payment.multipleSubject)}`;
         window.location.href = url
     }
 

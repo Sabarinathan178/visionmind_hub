@@ -19,7 +19,7 @@ const signUp = async(req, res) => {
         res.cookie('token', token);
         await student.save();
 
-        const verificationLink = `http://localhost:4000/student/verify/${token}`
+        const verificationLink = `https://visionmind-hub.onrender.com/student/verify/${token}`
         await mail({ from: process.env.email, to: email, subject: 'Email verification', text: `Please click on the following link to verify your email: ${verificationLink}`})
 
         res.status(200).json({ msg: 'Student created successfully'})
@@ -217,8 +217,8 @@ const payment = async (req, res) => {
             }
         }),
         mode: 'payment',
-        success_url: `http://localhost:4000/payment/success?teacher=${data.teacher}&student=${data.student}&multipleSubjects=${data.multipleSubjects}`,
-        cancel_url: `http://localhost:4000/payment/cancel/`
+        success_url: `https://visionmind-hub.onrender.com/payment/success?teacher=${data.teacher}&student=${data.student}&multipleSubjects=${data.multipleSubjects}`,
+        cancel_url: `https://visionmind-hub.onrender.com/payment/cancel/`
     });
     res.redirect(session.url)
 }

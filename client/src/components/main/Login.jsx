@@ -18,7 +18,7 @@ function Login() {
   const [error, seterror] = useState([])
 
   const authwithGoogle = async() => {
-    const url = `http://localhost:4000/${role}/useGoogle`;
+    const url = `https://visionmind-hub.onrender.com/${role}/useGoogle`;
     window.location.href = url;
   }
 

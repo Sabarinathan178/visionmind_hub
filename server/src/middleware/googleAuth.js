@@ -8,13 +8,13 @@
 // const student = {
 //     clientID: "105385184117-ht1e2jr8p5j31nj53bdiubgg3s68t0o9.apps.googleusercontent.com",
 //     clientSecret: "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",
-//     callbackURL: "http://localhost:4000/auth/google/student/callback"
+//     callbackURL: "https://visionmind-hub.onrender.com/auth/google/student/callback"
 // }
 
 // const teacher = {
 //     clientID: "105385184117-ht1e2jr8p5j31nj53bdiubgg3s68t0o9.apps.googleusercontent.com",
 //     clientSecret: "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",
-//     callbackURL: "http://localhost:4000/auth/google/teacher/callback"
+//     callbackURL: "https://visionmind-hub.onrender.com/auth/google/teacher/callback"
 // }
 
 // function generateUsername(email) {

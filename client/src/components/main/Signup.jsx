@@ -24,7 +24,7 @@ function Signup() {
   })
   
   const authwithGoogle = async () => {
-    const url = `http://localhost:4000/${role}/createGoogle`  
+    const url = `https://visionmind-hub.onrender.com/${role}/createGoogle`  
     window.location.href = url
   }
 
