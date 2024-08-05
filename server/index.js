@@ -9,7 +9,7 @@ const path = require('path')
 const cors = require('cors');
 const setupSocket = require('./src/modules/chat')
 
-const passport = require('./src/middleware/googleAuth')
+// const passport = require('./src/middleware/googleAuth')
 const student = require('./src/api/student')
 const teacher = require('./src/api/teacher')
 const admin = require('./src/api/admin')
@@ -31,8 +31,8 @@ app.use(session({
     cookie: { secure: false }
 }))
 
-app.use(passport.initialize())
-app.use(passport.session());
+// app.use(passport.initialize())
+// app.use(passport.session());
 app.use('/public', express.static(path.join(__dirname, '/src/public/uploads')))
 
 app.use(student)
